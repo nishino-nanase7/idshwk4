@@ -16,8 +16,8 @@ event zeek_init()
                         {
                             if((R2$num*1.0)/(R1$num*1.0) > 0.2)
                             {
-                                if((R3$num*1.0)/(R2$num*1.0)>0.5)
-                                    print fmt("%s is a scanner with %d scan attemps on %d urls",key$host,R2$num,R3$unique);
+                                if((R3$unique*1.0)/(R2$num*1.0)>0.5)
+                                    print fmt("%s is a scanner with %.0f scan attemps on %d urls",key$host,R2$num,R3$unique);
                             }
                         }
                         }]);
